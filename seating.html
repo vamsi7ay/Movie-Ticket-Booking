@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        }
+
+        header {
+        background-color: #007bff;
+        color: #fff;
+        text-align: center;
+        padding: 1em 0;
+        }
+
+        main {
+        padding: 2em;
+        }
+
+        footer {
+        text-align: center;
+        padding: 1em;
+        background-color: #333;
+        color: #fff;
+        }
+
+        /* Seating page specific styles */
+
+        .seating-arrangement {
+        text-align: center;
+        }
+
+        .seating-row {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1em;
+        }
+
+        .seat {
+        width: 30px;
+        height: 30px;
+        background-color: #ccc;
+        border: 1px solid #aaa;
+        margin: 0 5px;
+        cursor: pointer;
+        transition: background-color 0.3s, border-color 0.3s;
+        }
+
+        .seat.selected {
+        background-color: #007bff;
+        border-color: #0056b3;
+        }
+
+        .selected-seats {
+        margin-top: 2em;
+        }
+
+        .selected-seats h2 {
+        margin-top: 0;
+        }
+
+        .selected-seats ul {
+        list-style: none;
+        padding: 0;
+        }
+
+        .selected-seats li {
+        margin-bottom: 0.5em;
+        color: #555;
+        }
+    </style>
+    <title>MovieFlix - Select Seats</title>
+</head>
+<body>
+  <header>
+    <h1>Select Your Seats</h1>
+  </header>
+  <main>
+    <section class="seating-arrangement">
+      <!-- Seating arrangement UI -->
+    </section>
+    <section class="selected-seats">
+      <h2>Your Selected Seats</h2>
+      <nav>
+        <ul>
+          <li><a href="payment.html">Pay now</a></li>                     
+        </ul>
+      </nav>
+      <!-- Selected seats will be displayed here -->
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 MovieFlix. All rights reserved.</p>
+  </footer>
+</body>
+</html>

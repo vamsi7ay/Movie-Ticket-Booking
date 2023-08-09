@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Common styles */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+}
+
+main {
+  padding: 2em;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  background-color: #333;
+  color: #fff;
+}
+
+/* Movies page specific styles */
+
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.movie-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 1em;
+  margin: 1em;
+  width: 300px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.movie-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.movie-card h2 {
+  margin-top: 0;
+}
+
+.movie-card p {
+  margin-bottom: 0.5em;
+}
+
+.details-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
+
+.details-button:hover {
+  background-color: #0056b3;
+}
+
+  </style>
+  <title>MovieFlix - Movies</title>
+</head>
+<body>
+  <header>
+    <h1>Discover Movies</h1>
+  </header>
+  <main>
+    <section class="movie-list">
+      <article class="movie-card">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3e/Guntur_Kaaram_film_poster.jpg/220px-Guntur_Kaaram_film_poster.jpg" alt="Movie 1">
+        <h2>Movie Title 1</h2>
+        <p>Release Date: October 1</p>
+        <button class="details-button">Details</button>
+      </article>
+      <article class="movie-card">
+        <img src="data:image/jpeg;base64,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" alt="Movie 2">
+        <h2>Movie Title 2</h2>
+        <p>Release Date: October 15</p>
+        <button class="details-button">Details</button>
+      </article>
+      <!-- More movie cards -->
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 MovieFlix. All rights reserved.</p>
+  </footer>
+</body>
+</html>

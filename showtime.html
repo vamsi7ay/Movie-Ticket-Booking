@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+}
+
+main {
+  padding: 2em;
+}
+
+.showtime-listings {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.showtime {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 1em;
+  margin: 1em;
+  width: 300px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.showtime h2 {
+  margin-top: 0;
+}
+
+.showtime p {
+  margin-bottom: 0.5em;
+}
+
+.book-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
+
+li{
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
+
+.book-button:hover {
+  background-color: #0056b3;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  background-color: #333;
+  color: #fff;
+}
+
+  </style>
+  <title>MovieFlix - Showtimes</title>
+</head>
+<body>
+  <header>
+    <h1>Choose a Showtime</h1>
+  </header>
+  <main>
+    <section class="showtime-listings">
+      <article class="showtime">
+        <h2>Guntur Kaaram</h2>
+        <p>Date: January 12</p>
+        <p>Time: 3:00 PM</p>
+        <button class="book-button">Book Now</button>
+        <nav>
+          <ul>
+            <li><a href="seating.html">Select seats</a></li>                     
+          </ul>
+        </nav>
+      </article>
+      <article class="showtime">
+        <h2>Kalki 2898 AD</h2>
+        <p>Date: July 2024</p>
+        <p>Time: 6:00 PM</p>
+        <button class="book-button">Book Now</button>
+        <nav>
+          <ul>
+            <li><a href="seating.html">Select seats</a></li>                     
+          </ul>
+        </nav>
+      </article>
+      <!-- More showtime articles -->
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 MovieFlix. All rights reserved.</p>
+  </footer>
+</body>
+</html>
